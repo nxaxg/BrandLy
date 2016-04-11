@@ -1,0 +1,108 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: white;
+    font-family: 'open_sansregular';
+    overflow: hidden;
+    color: black;
+    font-size: 1em;
+}
+
+.container{
+    width: 70%;
+    margin: 0 auto;
+}
+
+ul li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*HEADER*/
+
+header {
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+    overflow: hidden;
+    height: 50px;
+}
+
+header .logo{
+    padding: 1% 0;
+    width: 30%;
+    float: left;
+    margin-right: 10%;
+    overflow: hidden;
+}
+
+header .logo img{
+    width: 30%;
+}
+
+header nav{
+    width: 60%;
+    float: left;
+    overflow: hidden;
+    padding: 1.4% 0;
+}
+
+nav ul{
+    width: 100%;
+    float: right;
+}
+
+nav ul li{
+    width: 15%;
+    float: left;
+    text-align: right;
+    margin-right: 2%;
+}
+nav ul li:last-child{
+    margin: 0;
+}
+
+nav ul li a{
+    color: rgba(255, 251, 251, 0.8);
+    font-family: 'open_sansregular';
+    font-weight: 100;
+}
+
+nav ul li a:hover{
+    color: white;
+}
+
+/*MAIN*/
+.main{
+    padding: 10% 0;
+    position: relative;
+    z-index: 0;
+    
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    
+    background: url(../img/main-banner.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.main .title-main1{
+    font-family: 'open_sanslight';
+    font-size: 2em;
+}
+
+.main .title-main{
+    font-family: 'latoblack';
+    font-size: 3em;
+}
