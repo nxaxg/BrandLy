@@ -26,6 +26,10 @@ a{
     text-decoration: none;
 }
 
+p{
+    line-height: 1.5em;
+}
+
 /*HEADER*/
 
 header {
@@ -146,6 +150,7 @@ nav ul li a:hover{
     font-size: 1.8em;
     padding: 1% 0;
 }
+
 .title-border{
     border: 1px solid red;
     border-width: thin;
@@ -154,9 +159,9 @@ nav ul li a:hover{
 }
 
 .three-col-div .three-col{
-    width: 30%;
+    width: 30.667%;
     float: left;
-    margin-right: 5%;
+    margin-right: 4%;
     position: relative;
     overflow: hidden;
     cursor: pointer;
@@ -176,11 +181,10 @@ nav ul li a:hover{
 }
 
 .two-col-div .two-col{
-    width: 47.5%;
+    width: 48%;
     float: left;
-    margin-right: 5%;
+    margin-right: 4%;
     position: relative;
-    cursor: pointer;
 }
 
 .two-col-div .two-col:last-child{
@@ -215,6 +219,7 @@ nav ul li a:hover{
     color: white;
     font-size: 2em;
     background-color: rgba(90, 92, 102, 0.5);
+    cursor: pointer;
 }
 
 #latest .three-col-div .prod-box{
@@ -244,4 +249,107 @@ nav ul li a:hover{
     width: 30%;
     margin: 0 auto;
     border-width: thin;
+}
+
+
+/***TRENDING***/
+#trending{
+    padding: 4% 0;
+    overflow: hidden;
+    position: relative;
+    
+    background: url(../img/trending-back.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#trending .two-col-div{
+    padding: 6% 0 4% 0;
+    overflow: hidden;
+}
+
+#trending .desc-title{
+    font-family: 'latobold';
+    font-size: 1.5em;
+    color: red;
+    text-transform: uppercase;
+    padding: 3% 0;
+}
+
+#trending .desc-subtitle{
+    font-family: 'open_sansregular';
+    font-weight: lighter;
+    color: #777;
+    padding: 0 0 3% 0;
+}
+
+#trending .desc-divider{
+    width: 8%;
+    float: left;
+    clear: both;
+    border: 1px solid gray;
+}
+
+#trending .desc-text{
+    padding: 3% 0;
+    clear: both;
+    font-family: 'latoregular';
+    color: #777;
+}
+
+#trending .desc-text #fashiontip{
+    padding: 2% 0 0 0;
+    text-transform: uppercase;
+}
+
+#trending .desc-text p:last-child{
+    padding: 0 0 2% 0;
+}
+
+#trending .desc-four-btns,
+#trending .desc-two-btns{
+    width: 70%;
+    float: left;
+    clear: both;
+    padding: 4% 0 2% 0;
+}
+
+#trending ul li{
+    float: left;
+    background-color: rgba(255,255,255,0);
+    border: 1px solid dimgray;
+    text-align: center;
+    padding: 2%;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#trending ul li:hover{
+    background-color: dimgray;
+}
+
+#trending ul li:hover a{
+    color: white;
+}
+
+#trending ul li a{
+    color: dimgray;
+    font-family: 'open_sansbold';
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+
+#trending .desc-four-btns li{
+    width: 20%;/* 20%*4 */
+    margin-right: 6.666%; /* 6.666%*3 */
+}
+
+#trending .desc-two-btns li{
+    width: 46.5%;
+    margin-right: 7%;
+}
+
+#trending .desc-four-btns li:last-child,
+#trending .desc-two-btns li:last-child{
+    margin: 0;    
 }
