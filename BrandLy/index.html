@@ -6,7 +6,7 @@
     <!--CSS-->
     <link rel="stylesheet" href="css/style.css">
     <!--fonts-->
-    <link rel="stylesheet" href="fonts/open-sans/stylesheet.css">
+    <link rel="stylesheet" href="fonts/opensans/stylesheet.css">
     <link rel="stylesheet" href="fonts/lato/stylesheet.css">
     <!--font awesome-->
     <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -20,7 +20,7 @@
             <nav>
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">Shop</a></li>
+                    <li><a href="#latest">Shop</a></li>
                     <li><a href="#">Brands</a></li>
                     <li><a href="#">Blog</a></li>
                     <li><a href="#">About</a></li>
@@ -42,40 +42,58 @@
     </section>
     
     <!--LATEST-->
-    <section class="latest">
+    <section id="latest">
         <div class="container">
+            <hr class="title-border">
             <h1 class="content-title">Latest products</h1>
+            <hr class="title-border">
             <!--first row-->
-            <div class="three-col-interior">
-                <figure>
+            <div class="three-col-div">
+                <figure class="three-col">
                     <img src="img/prod-men.jpg" alt="Men products">
-                    <figcaption>Men</figcaption>
+                    <figcaption>
+                        <div class="prod-box">
+                            <p>Men</p>
+                        </div>
+                    </figcaption>
                 </figure>
-                <figure>
+                <figure class="three-col">
                     <img src="img/prod-woman.jpg" alt="Woman products">
-                    <figcaption>Woman</figcaption>
+                    <figcaption>
+                        <div class="prod-box">
+                            <p>Woman</p>
+                        </div>
+                    </figcaption>
                 </figure>
-                <figure>
+                <figure class="three-col">
                     <img src="img/prod-watches.jpg" alt="Watches products">
-                    <figcaption>Watches</figcaption>
+                    <figcaption>
+                        <div class="prod-box">
+                            <p>Watches</p>
+                        </div>
+                    </figcaption>
                 </figure>
             </div>
             <!--second row-->
-            <div class="two-col-interior">
-                <figure>
+            <div class="two-col-div">
+                <figure class="two-col">
                     <img src="img/prod-40off.jpg" alt="40% off, autumns collection">
                     <figcaption>
-                        <p>40&#37; off</p>
-                        <p>new autumn</p>
-                        <p>Collection</p>
+                            <hr class="prod-border">
+                            <p>40&#37; Off</p>
+                            <p>New Autumn</p>
+                            <p>Collection</p>
+                            <hr class="prod-border">
                     </figcaption>
                 </figure>
-                <figure>
+                <figure class="two-col">
                     <img src="img/prod-megasale.jpg" alt="Megasale">
                     <figcaption>
-                        <p>Mega sale</p>
-                        <p>On items from</p>
-                        <p>Spirit collection</p>
+                           <hr class="prod-border">
+                            <p>Mega sale</p>
+                            <p>On items from</p>
+                            <p>Spirit collection</p>
+                            <hr class="prod-border">
                     </figcaption>
                 </figure>
             </div>

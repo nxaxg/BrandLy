@@ -9,7 +9,6 @@
 body{
     background-color: white;
     font-family: 'open_sansregular';
-    overflow: hidden;
     color: black;
     font-size: 1em;
 }
@@ -34,11 +33,11 @@ header {
     position: fixed;
     z-index: 3;
     overflow: hidden;
-    height: 50px;
+    background-color: rgba(0,0,0,0.2);
 }
 
 header .logo{
-    padding: 1% 0;
+    padding: 2% 0;
     width: 30%;
     float: left;
     margin-right: 10%;
@@ -46,19 +45,20 @@ header .logo{
 }
 
 header .logo img{
-    width: 30%;
+    width: 50%;
 }
 
 header nav{
     width: 60%;
     float: left;
     overflow: hidden;
-    padding: 1.4% 0;
+    padding: 2% 0;
 }
 
 nav ul{
     width: 100%;
     float: right;
+    padding: 2% 0;
 }
 
 nav ul li{
@@ -72,19 +72,21 @@ nav ul li:last-child{
 }
 
 nav ul li a{
-    color: rgba(255, 251, 251, 0.8);
+    color: rgba(255, 251, 251, 0.5);
     font-family: 'open_sansregular';
     font-weight: 100;
 }
 
 nav ul li a:hover{
     color: white;
+    transition: 0.5s;
 }
 
 /*MAIN*/
 .main{
-    padding: 10% 0;
+    padding: 14% 0 12% 0; 
     position: relative;
+    width: 100%;
     z-index: 0;
     
     text-align: center;
@@ -99,10 +101,147 @@ nav ul li a:hover{
 
 .main .title-main1{
     font-family: 'open_sanslight';
-    font-size: 2em;
+    font-size: 1.4em;
+    font-weight: lighter;
+    letter-spacing: 0.5em;
+    padding: 2% 0;
 }
 
 .main .title-main{
     font-family: 'latoblack';
-    font-size: 3em;
+    font-size: 2.5em;
+}
+
+.main .title-main3{
+    font-family: 'open_sanslight';
+    font-size: 1.4em;
+    font-weight: lighter;
+    padding: 2% 0;
+}
+
+.main .shop-now-btn{
+    margin: 4% 0 2% 0;
+}
+
+.main .shop-now-btn a{
+    border: 1px solid white;/* 1.5px/16= 0.094em */
+    padding: 1% 3%;
+    color: white;
+    font-family: 'latoblack';
+}
+
+.main .shop-now-btn a:hover{
+    color: black;
+    background-color: white;
+    transition: 0.5s;
+} 
+
+/***LATEST***/
+
+/*global*/
+.content-title{
+    text-align: center;
+    font-family: 'open_sanslight_italic';
+    font-weight: lighter;
+    font-size: 1.8em;
+    padding: 1% 0;
+}
+.title-border{
+    border: 1px solid red;
+    border-width: thin;
+    width: 10%;
+    margin: 0 auto;
+}
+
+.three-col-div .three-col{
+    width: 30%;
+    float: left;
+    margin-right: 5%;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.three-col-div .three-col:last-child{
+    margin: 0;
+}
+
+.three-col-div img{
+    width: 100%;
+    height: auto;
+}
+
+.two-col-div{
+    overflow: hidden;
+}
+
+.two-col-div .two-col{
+    width: 47.5%;
+    float: left;
+    margin-right: 5%;
+    position: relative;
+    cursor: pointer;
+}
+
+.two-col-div .two-col:last-child{
+    margin: 0;
+}
+
+.two-col-div img{
+    width: 100%;
+}
+
+/*latest*/
+
+#latest{
+    position: relative;
+    overflow: hidden;
+    padding: 4% 0;
+}
+
+#latest .three-col-div{
+    padding: 5% 0 3.5% 0;
+    overflow: hidden;
+}
+
+#latest .three-col-div figcaption,
+#latest .two-col-div figcaption{
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-family: 'open_sanslight_italic';
+    color: white;
+    font-size: 2em;
+    background-color: rgba(90, 92, 102, 0.5);
+}
+
+#latest .three-col-div .prod-box{
+    width: 80%;
+    margin: 10% auto;
+    padding: 40% 0;
+    border: 1px solid white;
+}
+
+#latest .three-col-div .three-col:hover figcaption,
+#latest .two-col-div .two-col:hover figcaption{
+    background-color: rgba(90, 92, 102, 0.2);
+    transition: 0.5s;
+}
+
+#latest .two-col-div figcaption{
+    font-family: 'latoblack';
+    font-size: 2.2em;
+    padding: 54% 0;
+}
+
+#latest .two-col-div .two-col:last-child{
+    text-transform: uppercase;
+}
+
+.two-col-div .prod-border{
+    width: 30%;
+    margin: 0 auto;
+    border-width: thin;
 }
