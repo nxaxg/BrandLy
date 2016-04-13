@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
@@ -14,6 +15,7 @@
     <script src="js/jquery-1.11.3.js"></script>
     <script src="js/script.js"></script>
 </head>
+
 <body>
     <header class="normal-header">
         <div class="container">
@@ -26,7 +28,7 @@
                     <li><a href="#latest" class="menu-link">Shop</a></li>
                     <li><a href="#trending" class="menu-link">Brands</a></li>
                     <li><a href="#blog" class="menu-link">Blog</a></li>
-                    <li><a href="#" class="menu-link">About</a></li>
+                    <li><a href="#newsletter" class="menu-link">About</a></li>
                     <li><a href="#" class="menu-link">Contact</a></li>
                 </ul>
             </nav>
@@ -38,12 +40,10 @@
             <h2 class="title-main1">Spring / summer collection</h2>
             <h1 class="title-main">Up to 60% discount on new arrivals</h1>
             <h3 class="title-main3">Trending new items, from creators around the world</h3>
-            <div class="shop-now-btn">
-                <a href="#">Shop now</a>
-            </div>
+            <button class="shop-now-btn">Shop now</button>
         </div>
     </section>
-    
+
     <!--LATEST-->
     <section id="latest">
         <div class="container">
@@ -82,27 +82,27 @@
                 <figure class="two-col">
                     <img src="img/prod-40off.jpg" alt="40% off, autumns collection">
                     <figcaption>
-                            <hr class="prod-border">
-                            <p>40&#37; Off</p>
-                            <p>New Autumn</p>
-                            <p>Collection</p>
-                            <hr class="prod-border">
+                        <hr class="prod-border">
+                        <p>40&#37; Off</p>
+                        <p>New Autumn</p>
+                        <p>Collection</p>
+                        <hr class="prod-border">
                     </figcaption>
                 </figure>
                 <figure class="two-col">
                     <img src="img/prod-megasale.jpg" alt="Megasale">
                     <figcaption>
-                           <hr class="prod-border">
-                            <p>Mega sale</p>
-                            <p>On items from</p>
-                            <p>Spirit collection</p>
-                            <hr class="prod-border">
+                        <hr class="prod-border">
+                        <p>Mega sale</p>
+                        <p>On items from</p>
+                        <p>Spirit collection</p>
+                        <hr class="prod-border">
                     </figcaption>
                 </figure>
             </div>
         </div>
     </section>
-    
+
     <!--Trending-->
     <section id="trending">
         <div class="container">
@@ -110,7 +110,7 @@
             <h1 class="content-title">Trending items</h1>
             <hr class="title-border">
             <div class="two-col-div">
-               <!--first-col-->
+                <!--first-col-->
                 <figure class="two-col">
                     <img src="img/prod-trending.jpg" alt="Trending jacket">
                 </figure>
@@ -125,37 +125,38 @@
                         <p>With this jacket,Nathan Stewart sunglasses go hand in hand!</p>
                     </div>
                     <ul class="desc-four-btns">
-                        <li><a href="#">M</a></li>
-                        <li><a href="#">L</a></li>
-                        <li><a href="#">XL</a></li>
-                        <li><a href="#">XXL</a></li>
+                        <li class="size size-selected">M</li>
+                        <li class="size">L</li>
+                        <li class="size">XL</li>
+                        <li class="size">XXL</li>
                     </ul>
-                    <ul class="desc-two-btns">
-                        <li><a href="#">Shop now</a></li>
-                        <li><a href="#">Size Guide</a></li>
-                    </ul>
+                    <div class="desc-two-btns">
+                        <button class="desc-btn">Shop now</button>
+                        <button class="desc-btn">Size Guide</button>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    
+
     <!--BLOG-->
     <section id="blog">
         <div class="container">
-            <h1 class="content-title">From the blog</h1>
+           <hr class="title-border">
+            <h1 class="content-title">From the Blog</h1>
+            <hr class="title-border">
             <div class="two-col-div">
-               <!--post 1-->
+                <!--post 1-->
                 <div class="two-col">
                     <figure>
                         <img src="img/blog-germanfashion.jpg" alt="German fashion picture">
                         <figcaption>German Fashion Wizards</figcaption>
                     </figure>
-                    <h4 class="post-author">By James Steed / Fashion</h4>
+                    <h4 class="post-author">By James Steed | Fashion</h4>
                     <p class="post-text">
-                        This week we had the chance of interviewing two creative artists from Germany. These guys are simply amazing at what they do with the European fashion scene and this year at Paris Fashion Week they introduced their new collection.</p>
-                    <div class="post-btn">
-                        <a href="#">Read more</a>
-                    </div>
+                        This week we had the chance of interviewing two creative artists from Germany. These guys are simply amazing at what they do with the European fashion scene and this year at Paris Fashion Week they introduced their new collection.
+                    </p>
+                    <button class="post-btn">Read More</button>
                 </div>
                 <!--post 2-->
                 <div class="two-col">
@@ -163,34 +164,31 @@
                         <img src="img/blog-anne.jpg" alt="Anne Stewart glasses">
                         <figcaption>Anne Stewart's Sunglasses</figcaption>
                     </figure>
-                    <h4 class="post-author">By Marry Beard / Trending</h4>
+                    <h4 class="post-author">By Marry Beard | Trending</h4>
                     <p class="post-text">
-                        Just amazing! That is how i can describe this person. So creative,so inspiring. I was watching her create in her small studio in London and i was amazed at how every little detail gets included in her creaions. From frames,to glass thickness she blew me away...
+                        Just amazing! That is how I can describe this person. So creative,so inspiring. I was watching her create in her small studio in London and i was amazed at how every little detail gets included in her creations.
                     </p>
-                    <div class="post-btn">
-                        <a href="#">Read more</a>
-                    </div>
+                    <button class="post-btn">Read More</button>
                 </div>
             </div>
         </div>
     </section>
-    
+
     <!--newsletter-->
-    <section class="newsletter">
+    <section id="newsletter">
         <div class="container">
-            <h2 class="newsletter-advice">Subscribe to our newsletter to receive latest news and offers</h2>
+            <h2 class="news-title">Subscribe to our newsletter to receive latest news and offers</h2>
             <div class="mail-input">
                 <span class="fa fa-envelope-o"></span>
                 <input type="email" placeholder="Email address">
             </div>
-            <div class="mail-btn">
-                <a href="#">Subscribe</a>
-            </div>
+            <button class="mail-btn">Subscribe </button>
         </div>
     </section>
-    
+
     <footer>
-        <p>Made with <span class="fa fa-heart"></span> by WeDonut.net</p>
+        <p>Made with <span class="fa fa-heart"></span> by <a href="#">WeDonut.net</a></p>
     </footer>
 </body>
+
 </html>
